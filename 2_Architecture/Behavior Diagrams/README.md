@@ -1,4 +1,4 @@
-Behaviour Diagrams :
+# Behaviour Diagrams :
 
 !. Sequence Diagram
 2. Activity Diagram
