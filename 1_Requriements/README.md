@@ -2,12 +2,14 @@
 
 # 1_Software Requriments :
 
-PROCESSOR TYPE	  :   Pentium IV or above for optimum performance.
-SYSTEM RAM	      :   1.00GB and Above
-INPUT DEVICE	    :   Basic Key Board and Touch Pad
-OUTPUT DEVICE	   :   Standard Color Monitor
-OPERATING SYSTEM :   Windows 10
-FRONT END	       :   Visual Studio Code
+Types            |   Describe
+----------------- ----------------
+PROCESSOR TYPE	  |   Pentium IV or above for optimum performance.
+SYSTEM RAM	      |   1.00GB and Above
+INPUT DEVICE	    |   Basic Key Board and Touch Pad
+OUTPUT DEVICE	   |   Standard Color Monitor
+OPERATING SYSTEM |   Windows 10
+FRONT END	       |   Visual Studio Code
 
 # 2_Module :
 
