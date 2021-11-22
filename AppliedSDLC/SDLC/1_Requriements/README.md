@@ -1,29 +1,57 @@
 # REQURIMENTS :
 
-**Introduction :
+# Introduction
 
-SDLC is a systematic process for building software that ensures the quality and correctness of the software built. SDLC process aims to produce high-quality software that meets customer expectations.The system development should be complete in the pre-defined time frame and cost. SDLC consists of a detailed plan which explains how to plan, build, and maintain specific software. Every phase of the SDLC life Cycle has its own process and deliverables that feed into the next phase. SDLC stands for Software Development Life Cycle and is also referred to as the Application Development life-cycle.
+In tnis project, a version of parking system program in c is developed which will perform parking system depending on the input from the customer.
 
-"Software development life cycle is about building a software (“only”) in a phased approach systematically. System development life cycle is about implementing hardware and software in a phased manner systematically. Here both the hardware and the software is considered as a system "*
+# Objective :
 
-**RESEARCH :
+The main objective of the project is to perform a parking system to make the best parking  for the customers. To make the vehicles easy to park.
 
-In research both the System and Software Development Life Cycle provides the phased approach systematically.
-1. It offers a basis for project planning, scheduling, and estimating
-2. Provides a framework for a standard set of activities and deliverables
-3. It is a mechanism for project tracking and control
-4. Increases visibility of project planning to all involved stakeholders of the development process
-5. Increased and enhance development speed
-6. Improved client relations
-7. Helps you to decrease project risk and project management plan overhead
+# Features :
 
-# links for both SDLC approach :
-* https://www.smartsheet.com/system-development-life-cycle-guide
-* https://www.guru99.com/software-development-life-cycle-tutorial.html
-* https://www.tutorialspoint.com/system_analysis_and_design/system_analysis_and_design_development_life_cycle.htm
+This project supports the following types of parking system :
+1. Administrator
+2. Collect total no. of vehicles parked
+3. how many 2 wheeler & 4 wheeler.
+4. Collect both customer and vehicle details
+5. start time and end time.
+6. payment details.
+7. exit
 
-# links for SDLC Pics :
-* https://lvivity.com/wp-content/uploads/2018/01/sdlc.jpg
-* https://svitla.com/uploads/ckeditor/SDLC.png
-* https://i.ytimg.com/vi/fh4oBnSKqok/maxresdefault.jpg
+# 4W's and 1 H's :
+
+# Why:
+  1. To reduce the complexity of parking space.
+  2. I’m making this application for vehicles safe and security .
+  3. It can be used by anyone for parking their vehicles.
+# Where:
+  1. This can be used in our daily lives at any where.
+  2. We can use it mostly on airport,busstations and other private parking places.
+#  Who:
+  1. It can be used by anyone.
+  2. Can be used as a safe and security for their vehicles.
+# When :
+  1. One can use anywhere for parking.
+  2. The project can be useful for all for parking the vehicles.
+# How:
+  1. By parking all the vehicles one can find their desired output.
+  2. It will be helpful in performing parkedspace calculate and safe. This will give accurate results.
+  
+# SWOT Analysis
+
+# Strengths
+  1. Perform parking system easily
+  2. It can calculate parking space and time and cost.
+# Weakness
+  1. It can perform various calculaions also.
+
+# Opportunities :
+  1. It is the safe and secure for all the vehciles at one place
+  2. It can be most useful in airports and Railway stations and others.
+ 
+# Threats :
+   Advanced feature parking systems are already exist.
+
+# High Level Requriments :
 
