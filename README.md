@@ -1,3 +1,7 @@
+# Code Quality Score
+![Code Quality Score](https://api.codiga.io/project/29838/score/svg)
+# Code Grade
+![Code Grade](https://api.codiga.io/project/29838/status/svg)
 # Linux OS
 [![linux os](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml/badge.svg)](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml)
 # M1_Application_Parking
