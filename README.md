@@ -1,3 +1,5 @@
+# UnitTesting
+[![Unit Testing - Unity](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/Unittesting.yml/badge.svg)](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/Unittesting.yml)
 # Codacy
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/452514c7bc604f1c967c3c78819cc583)](https://www.codacy.com/gh/GadidhalaKasturi/M1_Application_Parking/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GadidhalaKasturi/M1_Application_Parking&amp;utm_campaign=Badge_Grade)
 # Code Quality Score
