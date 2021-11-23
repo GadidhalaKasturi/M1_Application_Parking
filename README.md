@@ -3,7 +3,9 @@
 # Codacy
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/452514c7bc604f1c967c3c78819cc583)](https://www.codacy.com/gh/GadidhalaKasturi/M1_Application_Parking/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GadidhalaKasturi/M1_Application_Parking&amp;utm_campaign=Badge_Grade)
 # Code Quality Score
-![Code Quality Score](https://api.codiga.io/project/29838/score/svg)
+![Code Quality Score](<a href="https://app.codiga.io/public/user/github/GadidhalaKasturi">
+   <img src="https://api.codiga.io/public/badge/user/github/GadidhalaKasturi?style=light" alt="codiga badge" />
+</a>)
 # Code Grade
 ![Code Grade](https://api.codiga.io/project/29838/status/svg)
 # Linux OS
