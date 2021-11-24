@@ -4,15 +4,6 @@ void changecol ( struct vehicle *v )
 {
 	v -> col--;
 }
-struct tm* datetime()
-{
-	time_t ts;
-        struct tm *ct;
-	ts = time(NULL);
-        ct = localtime(&ts);
-        /* scan the year, month and year from the input string */
-return ct ;
-}
 int insertrecord(int veh,int type,int row,int col, struct tm *ct )
 {
 FILE *fptr;
@@ -22,8 +13,8 @@ FILE *fptr;
         printf("File does not exists \n");
         return 0 ;
     }
-    fprintf(fptr,"\n");
-    fprintf(fptr,"%d ",veh);
+    	fprintf(fptr,"\n");
+    	fprintf(fptr,"%d ",veh);
         fprintf(fptr,"%d ",type);
         fprintf(fptr,"%d ",row);
         fprintf(fptr,"%d ",col);
@@ -263,70 +254,6 @@ int backupr()
 
 }
 /* adds a data of vehicle */
-struct vehicle * add ( int t, int num, int row, int col )
-{
-    struct vehicle *v ;
-    int r ;
-
-    v = ( struct vehicle * ) malloc ( sizeof ( struct vehicle ) ) ;
-
-    v -> type = t ;
-    v -> row = row ;
-    v -> col = col ;
-
-	  if ( t == CAR )
-      carcount++ ;
-    else
-    	scootercount++ ;
-
-    vehcount++ ;
-	  parkinfo[row][col] = num ;
-     v->at = datetime();
-	  insertrecord(num,t,row,col,datetime());
-	   backupw(t);
-	  r = randint();
-	  if(r < 5 )
-      {
-          printf("\a");
-          printf("\a");
-          finesheet(num,t,row,col,datetime());
-
-      }
-
-    return v ;
-}
-struct vehicle * addonstart ( int t, int num, int row, int col )
-{
-    struct vehicle *v ;
-    int r ;
-
-    v = ( struct vehicle * ) malloc ( sizeof ( struct vehicle ) ) ;
-
-    v -> type = t ;
-    v -> row = row ;
-    v -> col = col ;
-
-	  if ( t == CAR )
-      carcount++ ;
-    else
-    	scootercount++ ;
-
-    vehcount++ ;
-	  parkinfo[row][col] = num ;
-     //v->at = datetime();
-	  //insertrecord(num,t,row,col,datetime());
-	//   backupw(t);
-	 // r = randint();
-	 // if(r < 5 )
-      /*{
-          printf("\a");
-          printf("\a");
-          finesheet(num,t,row,col,datetime());
-
-      }*/
-
-    return v ;
-}
 
 /* deletes the data of the specified
    car from the array, if found */
@@ -367,7 +294,7 @@ void getfreerowcol ( int type, int *arr )
 			{
 				arr[0] = r ;
 				arr[1] = c ;
-        return ;
+        //return ;
 			}
 		}
 	}
