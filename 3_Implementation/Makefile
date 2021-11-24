@@ -2,7 +2,7 @@
 PROJECT_NAME = Parking
 
 #Doxyfile folder
-DOC = doc
+DOC = Doxyfile
 
 # All source code files
 SRC = project_main.c\
