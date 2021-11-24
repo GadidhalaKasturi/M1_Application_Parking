@@ -1,5 +1,16 @@
-#include "stdio.h"
-#include "parking.h"
+/**
+ * @file feature.h
+ * @author Alrich Roshan
+ * @brief 
+ * @version 0.1
+ * @date 2021-11-17
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
+#ifndef PARKING_SYSTEM_H_
+#define PARKING_SYSTEM_H_
 
 struct vehicle *car[2][10] ;
 struct vehicle *scooter[2][10] ;
@@ -25,3 +36,5 @@ int backupr();
 struct vehicle * addonstart ( int, int, int, int ) ;
 void total_bill(int ,struct tm *ct1,struct tm *ct2);
 void get_arrival_time(int);
+
+#endif
