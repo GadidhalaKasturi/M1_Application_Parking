@@ -1,7 +1,7 @@
 
 # High Level Requriments :
 
-ID      |  Description                                     | Exp I/P	    | Exp O/P	        |Actual Out      |	Type Of TestStatus
+ID      |  Description                                     | Exp I/P	    | Exp O/P	        |  Actual Out    |	TestStatus
 ------- ---------------------------------------------------|------------- |-----------------|----------------|-----------------
 HLR_1   |   Enter details by Administrator                 |  Total data  | data in system  | explored data  | Implemented
 HLR_2   |   Collect total no. of vehicles parked           | 4            |  4              | 4              | Implemented
