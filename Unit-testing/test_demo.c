@@ -1,31 +1,42 @@
-#include "unity.h"
-#include "demo.h"
+/**
+ * @file demo.c
+ * @author kasturi
+ * @brief Demo program to showcase the Unit testing examples
+ * @version 0.1
+ * @date 2021-07-03
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+#include "stdio.h"
+#include "assert.h"
 
-/* Required by the unity test framework */
-void setUp()
+/**
+ * @brief Function to perform division of 2 interger values
+ * 
+ * @param num1 Numerator
+ * @param num2 Denominator
+ * @return flaot Result of the division
+ */
+float division(int num1, int num2)
 {
-}
-/* Required by the unity test framework */
-void tearDown()
-{
+    return (float)num1 / num2;
 }
 
-void test_division(void)
+
+int main()
 {
-    int n1 = 10, n2 = 20;
-    TEST_ASSERT_EQUAL(0.5, division(n1, n2));
+    int n1 = 20, n2 = 10;
     
-    TEST_ASSERT_EQUAL(2, division(n2, n1));
+    /**
+     * Abort will be called if expression evaluates to falls
+     * Expression, Source code file name and line number are sent to standard error
+    */
+    assert(12 == division(n1, n2)); 
+    printf("Assert1 is passing \n");
 
-    TEST_ASSERT_EQUAL(2, division(n2, n1));
-}
+    assert(0.5 == division(n2, n1)); 
+    printf("Assert2 is passing \n");
 
-int main(void)
-{
-    /* Initiate the Unity Test Framework */
-    UNITY_BEGIN();
-    /* Run Test functions */
-    RUN_TEST(test_division);
-    /* Close the Unity Test Framework */
-    return UNITY_END();
+    return 0;
 }
