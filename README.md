@@ -1,5 +1,5 @@
 # Windows OS
-[![linux os](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml/badge.svg)
+[![windows os](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml/badge.svg)
 
 # UnitTesting
 [![linux os](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml/badge.svg)](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/linu.yml)
