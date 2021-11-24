@@ -152,7 +152,6 @@ void get_arrival_time(int num)
                 &hour, &min, &sec);
 
    if(veh == num){
-     day2 = day;
      mon2 = mon;
      year2 = year;
      hour2 = hour;
