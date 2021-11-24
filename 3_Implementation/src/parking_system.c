@@ -22,22 +22,6 @@ FILE *fptr;
 	fprintf(fptr,"%d:%d:%d  ", ct->tm_hour, ct->tm_min, ct->tm_sec);
 	fclose(fptr);
 }
-int insertrecord2(int veh, struct tm *ct )
-{
-FILE *fptr;
-    fptr = fopen("depart.dat", "a");
-
-    if (fptr == NULL)
-    {
-        printf("File does not exists \n");
-        return 0 ;
-    }
-    fprintf(fptr,"\n");
-    fprintf(fptr,"%d ",veh);
-    fprintf(fptr,"%d/%d/%d  ", ct->tm_mday, ct->tm_mon + 1, ct->tm_year + 1900);
-    fprintf(fptr,"%d:%d:%d  ", ct->tm_hour, ct->tm_min, ct->tm_sec);
-    fclose(fptr);
-}
 void get_arrival_time(int num)
 {
     int veh ,type,row,col ;
