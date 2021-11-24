@@ -1,33 +1,30 @@
 # Name of the project
-PROJECT_NAME = Parking System
+PROJECT_NAME = Parking
 
-# Output directory
-BUILD = build
+#Doxyfile folder
+DOC = doc
 
 # All source code files
-SRC = project_main.c\
-src/parking_system.c
+SRC = main.c\
+src/functions.c
 
 # All test source files
-TEST_SRC = src/parking_system.c\
-test/test_parking_system.c\
+TEST_SRC = src/functions.c\
+test/test_functions.c\
 unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
 -Iunity\
 
-#Library Inlcudes
-#INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(PROJECT_NAME).out
 
 # Document files
-DOCUMENTATION_OUTPUT = documentation/html
+DOCUMENTATION_OUTPUT = doc/html
 
 # Default target built
 $(PROJECT_NAME):all
@@ -36,43 +33,25 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -lm -o $(PROJECT_OUTPUT)
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+	./$(PROJECT_OUTPUT)
 
-# Document the code using Doxygen
-doc:
-	make -C ./documentation
+#Documentation using doxygen
+doc: $(DOC)
+	make -C $(DOC) doc
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	gcc $(TEST_SRC) $(INC) -lm -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
-
-analyze: test memcheck staticcheck coverage sanitize_check
-
-staticcheck:
-	cppcheck --enable=all -iunity .
-
-memcheck:
-	valgrind ./$(TEST_OUTPUT)
-
-sanitize_check:
-	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+#Coverage
+coverageCheck: 
+	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
-
-coverage:$(TEST_SRC)
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
-	./$(TEST_OUTPUT)
-	gcov -a parking_system.c
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
-
-# Create new build folder if not present
-$(BUILD):
-	mkdir build
-
+	rm -rf $(PROJECT_OUTPUT) $(TEST_OUTPUT) $(DOCUMENTATION_OUTPUT)
