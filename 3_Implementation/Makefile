@@ -5,12 +5,12 @@ PROJECT_NAME = Parking
 DOC = doc
 
 # All source code files
-SRC = main.c\
-src/functions.c
+SRC = parking_system.c\
+src/paking_system.c
 
 # All test source files
-TEST_SRC = src/functions.c\
-test/test_functions.c\
+TEST_SRC = src/parking_system.c\
+test/test_parking_system.c\
 unity/unity.c\
 
 TEST_OUTPUT = Test_$(PROJECT_NAME).out
