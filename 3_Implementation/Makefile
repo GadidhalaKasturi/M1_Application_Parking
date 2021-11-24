@@ -5,7 +5,7 @@ PROJECT_NAME = Parking
 DOC = doc
 
 # All source code files
-SRC = parking_system.c\
+SRC = main.c\
 src/paking_system.c
 
 # All test source files
