@@ -13,8 +13,8 @@ HLR_7   |   exit                                           |              |     
 
 # Low Level Requriments :
 
-ID      |   Description                                    |   Status
---------|--------------------------------------------------|----------------
-LLR_1   | List of operations displayed                     |  Implemented
-LLR_2   | Input from the user                              |  Implemented
-LLR_3   | Exit the program                                 |  Implemented
+ID      |   Description                                    |  Exp I/P     |  Exp O/P   |   Action Out | Status
+--------|--------------------------------------------------|--------------|------------|--------------|--------
+LLR_1   | List of operations displayed                     |  3, (2,1)| 2 | 2|Implemented
+LLR_2   | Input from the user                              |  2 | 2| SUCESS |Implemented
+LLR_3   | Exit the program                                 |   | | |Implemented
