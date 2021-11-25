@@ -1,4 +1,4 @@
-name: Linux OS Build
+name: linux OS 
 
 on:
   push:
