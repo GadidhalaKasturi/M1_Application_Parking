@@ -1,4 +1,5 @@
-
+# Windows OS
+[![Windows C/C++ CI - Build Status](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/Build%20windows.yml/badge.svg)](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/Build%20windows.yml)
 # cpp_check
 [![Code Quality - Static Code - Cppcheck](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/cpp_check.yml/badge.svg)](https://github.com/GadidhalaKasturi/M1_Application_Parking/actions/workflows/cpp_check.yml)
 
