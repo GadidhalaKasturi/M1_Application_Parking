@@ -29,3 +29,9 @@ Folder_Name      |  Description
 And it can resolved by using the codigo .
 
 2. Second challednge is creating the badges. And it can resolved by the buddy team support.
+
+# Contributors List and Summary
+
+PS No. | Name  |  Features  |  Issue Raised  |  Issue Resolved  | No.of Testcases  | Testcase Pass
+-------|-------|------------|----------------|------------------|------------------|---------------
+40020498|GadidhalaKasturi| All | 2 | 1 | 7 | 7
