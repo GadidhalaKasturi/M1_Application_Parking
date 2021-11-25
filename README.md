@@ -22,3 +22,10 @@ Folder_Name      |  Description
 4_Testplan       |  Documents with test plans
   5_Report       |  Documentation of whole project
 6_Images         |  All the images of this project
+
+# Challenges faced and How was it overcome
+
+1. Implementation part it was difficult to write test_cases for me. 
+And it can resolved by using the codigo .
+
+2. Second challednge is creating the badges. And it can resolved by the buddy team support.
