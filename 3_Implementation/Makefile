@@ -1,16 +1,16 @@
 # Name of the project
-PROJECT_NAME = Parking
+PROJECT_NAME = Billing
 
 #Doxyfile folder
-DOC = Doxyfile
+DOC = doc
 
 # All source code files
-SRC = project_main.c\
-src/paking_system.c
+SRC = main.c\
+src/operations.c
 
 # All test source files
-TEST_SRC = src/parking_system.c\
-test/test_parking_system.c\
+TEST_SRC = src/operations.c\
+test/test_operations.c\
 unity/unity.c\
 
 TEST_OUTPUT = Test_$(PROJECT_NAME).out
